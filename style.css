@@ -1,0 +1,40 @@
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 80vw;
+  margin: auto;
+}
+
+.grid-item {
+  flex-basis: calc(100% / 16);
+  border: 1px solid black;
+  background-color: white;
+}
+
+/* Add a new rule to change the hover color to a variable value */
+.rgb-hover .grid-item:hover {
+  background-color: var(--random-color);
+}
+.green-hover .grid-item:hover {
+  background-color: green;
+}
+
+/* Add styles for the button elements */
+button {
+  font-size: 1.5em;
+  padding: 20px;
+  margin: 50px auto;
+  display: block;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+#green-hover-button {
+  background-color: green;
+}
+
+#rgb-hover-button {
+  background-color: firebrick;
+}
